@@ -1,50 +1,99 @@
 # 🌆 Interactive 3D City Simulation
 
-An interactive 3D city environment developed using **C++, OpenGL, and FreeGLUT** as a Computer Graphics project. The simulation represents a modern urban environment with detailed buildings, roads, moving vehicles, traffic signals, pedestrians, and environmental elements.
+An interactive 3D urban environment developed using **C++, OpenGL, and FreeGLUT** for the Computer Graphics Lab course.
 
-The project also features dynamic **Day/Night transitions**, weather effects, and interactive camera controls to create an engaging 3D experience.
-
----
+This project presents a detailed virtual city featuring realistic buildings, roads, traffic systems, animated vehicles, pedestrians, greenery, and various urban structures. It demonstrates the practical application of 3D modeling, transformations, lighting, animation, and user interaction in computer graphics.
 
 ## ✨ Features
 
 ### 🏙️ 3D City Environment
-- Detailed 3D buildings and urban structures.
-- Shopping mall, hospital, school, and mosque.
-- Roads, sidewalks, pedestrian crossings, and street furniture.
-- Trees, flowers, grass, and other environmental elements.
-- Footbridge and additional city landmarks.
+- Detailed 3D urban environment with multiple buildings.
+- Shopping Mall with architectural details.
+- Chittagong Medical College Hospital (CMCH).
+- Chittagong Government Medical College (CGMSC).
+- Jame Masjid.
+- Residential and commercial buildings.
+- Roads, sidewalks, pedestrian crossings, and plazas.
+- Footbridge connecting both sides of the road.
 
-### 🚗 Traffic Simulation
-- Animated vehicles moving along city roads.
-- Traffic signal system with coordinated light phases.
-- Interactive traffic light controls.
-- Vehicle movement and speed adjustment.
+### 🚦 Traffic Management System
+- Functional traffic signal system.
+- Coordinated traffic light phases.
+- Red, yellow, and green traffic signals.
+- Multiple animated vehicles, including cars, buses, and other vehicle types.
+- Vehicle movement with acceleration and braking behavior.
+- Vehicles respond to traffic signals.
+- Vehicle spacing and collision-avoidance behavior.
+- Pedestrian crossing coordination.
 
-### 🌞 Dynamic Day & Night Cycle
-- Smooth transition between daytime and nighttime.
-- Dynamic sky color and lighting changes.
-- Sun and moon visual effects.
-- Different lighting atmospheres for day and night.
-
-### 🌧️ Weather Effects
-- Rain particle simulation.
-- Snow particle simulation.
-- Clear weather mode.
-- Dynamic weather changes during the simulation.
-
-### 🎮 Interactive Camera System
-- Multiple camera presets.
-- Camera rotation, movement, and zoom.
-- Mouse-based camera interaction.
-- Automatic camera orbit.
-- Reset camera functionality.
-
-### 🌳 Environmental Animation
+### 🚶 Animated Environment
 - Animated pedestrians.
 - Flying birds.
 - Moving clouds.
-- Additional environmental details that make the city feel alive.
+- Trees with wind-based swaying animation.
+- Animated Bangladesh national flag.
+- Automatic sliding glass doors at selected buildings.
+
+### 🌳 Environmental Details
+- Different types of trees and plants.
+- Grass and colorful flowers.
+- Streetlights and benches.
+- Bus shelters.
+- Roadside furniture and billboards.
+- Building windows, glass panels, and architectural decorations.
+
+### 🎥 Interactive Camera System
+- Eight camera presets for different city views.
+- Overview and map views.
+- Individual views of major buildings.
+- Footbridge view.
+- Street-level camera view.
+- Mouse-based camera rotation, zoom, and panning.
+- Keyboard-based camera movement.
+- Automatic camera orbit.
+- Camera reset functionality.
+
+### 🖥️ Heads-Up Display (HUD)
+- Displays current traffic signal states.
+- Shows simulation status.
+- Provides on-screen keyboard and mouse control instructions.
+- Option to hide or show the HUD.
+
+---
+
+## 🎮 Controls
+
+| Key / Input | Function |
+|---|---|
+| `1` | City Overview |
+| `2` | Map View |
+| `3` | Shopping Mall View |
+| `4` | CMCH View |
+| `5` | CGMSC View |
+| `6` | Jame Masjid View |
+| `7` | Footbridge View |
+| `8` | Street-Level View |
+| `R` | Reset Camera |
+| `Space` | Pause / Resume Simulation |
+| `H` | Hide / Show HUD |
+| `T` | Toggle Automatic Camera Orbit |
+| `W` | Move Camera Forward |
+| `S` | Move Camera Backward |
+| `A` | Move Camera Left |
+| `D` | Move Camera Right |
+| `+` / `-` | Zoom In / Zoom Out |
+| `Arrow Keys` | Rotate Camera |
+| `Page Up` / `Page Down` | Zoom Camera |
+| `Esc` | Exit Simulation |
+
+### Mouse Controls
+
+| Mouse Input | Function |
+|---|---|
+| Left Button + Drag | Rotate Camera |
+| Right Button + Drag | Zoom Camera |
+| Middle Button + Drag | Pan Camera |
+| Mouse Wheel | Zoom In / Out |
 
 ---
 
@@ -54,71 +103,38 @@ The project also features dynamic **Day/Night transitions**, weather effects, an
 |---|---|
 | C++ | Core programming language |
 | OpenGL | 3D graphics rendering |
-| FreeGLUT | Window management and user interaction |
-| GLU | Graphics utility functions |
+| FreeGLUT / GLUT | Window management and interaction |
+| GLU | 3D utility functions and geometric primitives |
+| GCC / MinGW | C++ compilation |
 | Code::Blocks | Development environment |
-| GCC / MinGW | C++ compiler |
-
----
-
-## 🎮 Controls
-
-| Key | Action |
-|---|---|
-| `D` | Switch to Day mode |
-| `N` | Switch to Night mode |
-| `B` | Enable Rain |
-| `P` | Enable Snow |
-| `C` | Clear Weather |
-| `R` | Reset Camera |
-| `Space` | Pause / Resume simulation |
-| `H` | Show / Hide HUD |
-| `T` | Toggle Automatic Camera Orbit |
-| `W` | Increase vehicle speed |
-| `S` | Decrease vehicle speed |
-| `+` / `-` | Zoom In / Zoom Out |
-| `W` / `A` / `S` / `D` | Camera movement where applicable |
-| `Arrow Keys` | Rotate camera |
-| `Page Up` / `Page Down` | Zoom camera |
-| `1–8` | Switch camera presets |
-| `Esc` | Exit simulation |
-
-**Note:** Some controls may have context-dependent behavior. For example, `W`, `A`, `S`, and `D` are also used for camera movement in the original camera system.
 
 ---
 
 ## ⚙️ Installation and Setup
 
 ### Requirements
+- Windows operating system
+- Code::Blocks IDE
+- GCC / MinGW compiler
+- OpenGL libraries
+- FreeGLUT library
 
-Before running the project, make sure you have:
-
-- Windows operating system.
-- Code::Blocks IDE.
-- GCC / MinGW compiler.
-- OpenGL libraries.
-- FreeGLUT library.
-
-### Step 1: Clone the Repository
-
-Open your terminal and run:
+### 1. Clone the Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+https://github.com/Israt-2902/Interactive-3D-City-Simulation
 ```
 
-Replace `YOUR_REPOSITORY_URL` with your GitHub repository URL.
-
-### Step 2: Open the Project
+### 2. Open the Project
 
 1. Open Code::Blocks.
 2. Select **File → Open**.
-3. Open the project file (`.cbp`) if available.
-4. Otherwise, create a C++ project and add `main.cpp`.
+3. Open the `.cbp` project file.
+4. Make sure `main.cpp` is included in the project.
 
-### Step 3: Configure Libraries
+### 3. Configure Required Libraries
 
-Make sure the following libraries are linked in your project:
+Configure the FreeGLUT include and library directories and link the following libraries:
 
 ```text
 freeglut
@@ -126,65 +142,51 @@ opengl32
 glu32
 ```
 
-Also configure the FreeGLUT include and library directories if they are not already configured.
+### 4. Build and Run
 
-### Step 4: Build and Run
-
-Build the project and run it using Code::Blocks.
-
-The city simulation window should appear once compilation is successful.
-
----
-
-## 📸 Project Overview
-
-The simulation combines 3D modeling, lighting, animation, and user interaction to represent a dynamic urban environment.
-
-**Main components:**
-- City infrastructure and buildings
-- Road and traffic management
-- Animated vehicles and pedestrians
-- Day/Night lighting system
-- Rain and snow particle effects
-- Interactive camera system
+- Select **Build → Build**.
+- Run the project after successful compilation.
+- Explore the city using the keyboard and mouse controls.
 
 ---
 
 ## 🎯 Project Objectives
 
-- Apply fundamental computer graphics concepts in a practical project.
-- Develop a three-dimensional urban environment.
-- Implement object modeling, transformations, and lighting.
-- Simulate vehicle movement and traffic signals.
-- Demonstrate dynamic environmental effects.
-- Build an interactive graphics application using keyboard and mouse controls.
+- Develop an interactive three-dimensional city environment.
+- Apply 3D modeling techniques using OpenGL primitives.
+- Implement realistic urban structures and infrastructure.
+- Demonstrate object transformations and lighting.
+- Simulate vehicle movement and traffic signal coordination.
+- Implement animated pedestrians and environmental elements.
+- Develop an interactive camera system.
+- Apply computer graphics concepts in a practical application.
 
 ---
 
 ## 🚀 Future Improvements
 
-- More realistic vehicle physics and traffic behavior.
-- Improved building interiors and architectural details.
-- Additional weather conditions.
+- Dynamic Day/Night transitions.
+- Rainfall and snowfall particle effects.
 - More advanced lighting and shadow effects.
-- Environmental sound effects.
-- Expanded city infrastructure and interactive elements.
+- Environmental and traffic sound integration.
+- Additional interactive city elements.
 
 ---
 
-## 👨‍💻 Project Information
+## 📌 Project Information
 
-**Project Title:** Interactive 3D City Simulation
-
-**Course:** Computer Graphics Lab
-
-**Language:** C++
-
-**Graphics Library:** OpenGL & FreeGLUT
-
-**Development Environment:** Code::Blocks
+| Item | Details |
+|---|---|
+| Project Name | Interactive 3D City Simulation |
+| Course | Computer Graphics Lab |
+| Course Code | CSE-4742 |
+| Department | Computer Science & Engineering |
+| University | International Islamic University Chittagong |
+| Programming Language | C++ |
+| Graphics API | OpenGL |
+| Utility Library | FreeGLUT / GLUT |
+| Development Environment | Code::Blocks |
 
 ---
 
-⭐ If you find this project interesting, consider giving the repository a star!
-
+⭐ **Thank you for visiting this project!**

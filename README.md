@@ -10,7 +10,7 @@ This project presents a detailed virtual city featuring realistic buildings, roa
 - Detailed 3D urban environment with multiple buildings.
 - Shopping Mall with architectural details.
 - Chittagong Medical College Hospital (CMCH).
-- Chittagong Government Medical College (CGMSC).
+- Chittagong Government Model School & College (CGMSC).
 - Jame Masjid.
 - Residential and commercial buildings.
 - Roads, sidewalks, pedestrian crossings, and plazas.
